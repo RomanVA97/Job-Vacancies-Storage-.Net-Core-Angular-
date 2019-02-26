@@ -1,0 +1,63 @@
+li {
+    list-style-type: none; /* Убираем маркеры */
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    
+    padding: 3px; /* Поля вокруг текста */
+}
+
+ul{
+    flex-direction: row;
+    padding-left: 0;
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+} 
+
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+}
+
+
+  h2{
+    text-transform: uppercase;
+    font-weight: bold !important;
+  }
+  
+  nav {
+    background-color: #222;
+  }
+  
+  nav button {
+    background-color: #d41111 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 15px !important;
+  }
+  
+  .navbar-brand {
+    color: #d41111 !important;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+  }
+  
+  
+  .nav-link:hover {
+    color: #d41111 !important;
+  }
+  .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    color: #fff !important;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    display: block;
+  }
+  

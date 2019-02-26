@@ -1,0 +1,49 @@
+
+
+section a,
+footer a {
+    color: #d41111 !important;
+}
+.footer {
+    display: flex;
+    align-items: baseline;
+  }
+  
+.footer div {
+    display: flex;
+    justify-content: center;
+}
+.row{
+    align-items: center;
+}
+.firm{
+    justify-content: center;
+    display: flex;
+}
+footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.fa-twitter{
+    display: flex !important;
+    justify-content: center;
+    padding-top: 10px;
+}
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #fff !important;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #222;
+}

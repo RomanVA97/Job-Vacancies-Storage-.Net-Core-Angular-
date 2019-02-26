@@ -1,0 +1,83 @@
+<section class="bg-faded" id="portfolio">
+    <div class="container">
+        <form>
+            <h2>Новое событие</h2>
+            <div class="form-group">
+                <mat-form-field class="max-width">
+                    <input matInput placeholder="Введите заголовок" [(ngModel)]="event.title"
+                        [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <!--<mat-form-field class="max-width">
+                    <input matInput placeholder="Описание" [(ngModel)]="event.description"
+                        [ngModelOptions]="{standalone: true}">
+                </mat-form-field>-->
+                <label>Описание</label>
+                <angular-editor [(ngModel)]="event.description" [ngModelOptions]="{standalone: true}"></angular-editor>
+            </div>
+
+
+
+            <div class="form-group">
+                <mat-form-field class="max-width">
+                    <input matInput placeholder="Ссылка на страницу регистрации" [(ngModel)]="event.registrationLink"
+                        [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="max-width">
+                    <input matInput placeholder="Город" [(ngModel)]="event.city" [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="max-width">
+                    <input matInput placeholder="Адрес события" [(ngModel)]="event.address"
+                        [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="max-width">
+                    <input matInput placeholder="Email для связи" [(ngModel)]="event.email"
+                        [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="max-width">
+                    <input matInput placeholder="Телефон для связи" [(ngModel)]="event.phoneNumber"
+                        [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <span>{{event.date | date: 'dd.MM.yyyy HH:mm'}}</span>
+            </div>
+
+            <div class="form-group" style="max-width: 400px;">
+                <dl-date-time-picker startView="day" maxView="year" minView="minute" minuteStep="5"
+                    [(ngModel)]="event.date" [ngModelOptions]="{standalone: true}">
+                </dl-date-time-picker>
+            </div>
+
+
+
+
+
+            <div class="form-group">
+                    <label>Логотип события</label>
+                <input class="form-control" type="file" (change)="upload($event.target.files[0])">
+
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                Публикуя событие, вы автоматически соглашаетесь с <strong><a routerLink="/rules">условиями работы
+                        сервиса</a></strong>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-xl" (click)="Create()">Сохранить</button> </div>
+
+        </form>
+    </div>
+</section>

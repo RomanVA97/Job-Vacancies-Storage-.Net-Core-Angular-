@@ -1,0 +1,150 @@
+<!--<h2>Create vacancy</h2>
+
+<form>
+
+  <div class="form-group">
+    <label>Введите заголовок</label>
+    <input type="text" [(ngModel)]="vacancy.title" name="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Тип занятости</label>
+    <select [(ngModel)]="vacancy.workingCondition" [ngModelOptions]="{standalone: true}" class="form-control">
+      <option value="0">Contract</option>
+      <option value="1">Freelance</option>
+      <option value="2">Full Time</option>
+      <option value="3">Part Time</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Описание</label>
+    <input type="text" [(ngModel)]="vacancy.description" placeholder="" required [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Город</label>
+    <input type="text" [(ngModel)]="vacancy.city" placeholder="" required [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Удаленные условия</label>
+    <input type="checkbox" [(ngModel)]="vacancy.isRemoteWorking" placeholder="" required
+      [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Наименование организации</label>
+    <input type="text" [(ngModel)]="vacancy.organizationName" placeholder="" required
+      [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Email для связи</label>
+    <input type="text" [(ngModel)]="vacancy.email" placeholder="" required [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Сайт компании</label>
+    <input type="text" [(ngModel)]="vacancy.companyURL" placeholder="" required [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Телефон для связи</label>
+    <input type="text" [(ngModel)]="vacancy.phoneNumber" placeholder="" required [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Контактное лицо</label>
+    <input type="text" [(ngModel)]="vacancy.contactPartner" placeholder="" required
+      [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Зарплата</label>
+    <input type="text" [(ngModel)]="vacancy.salary" placeholder="" required [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label>Валюта оплаты</label>
+    <select [(ngModel)]="vacancy.currencyType" [ngModelOptions]="{standalone: true}">
+      <option value="0">EUR</option>
+      <option value="1">RUB</option>
+      <option value="2">USD</option>
+    </select>
+  </div>
+
+  <button class="btn btn-primary" (click)="Create()">Register</button>
+</form>-->
+
+<section class="bg-faded" id="portfolio">
+  <div class="container">
+    <h2>Новая вакансия</h2>
+    <form accept-charset="UTF-8" action="/events" enctype="multipart/form-data" id="add_event_form" method="post"><input
+        name="_csrf_token" type="hidden" value="EGlLVR8UDQVkejcIFQZaDw8hKX84EAAAcZsf4EWuR/pOeJ+zVOxFIg=="><input
+        name="_utf8" type="hidden" value="✓">
+     
+      <div class="form-group">
+        <label>Заголовок</label>
+        <input type="text" [(ngModel)]="vacancy.title" name="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Тип занятости</label>
+        <select [(ngModel)]="vacancy.workingCondition" [ngModelOptions]="{standalone: true}" class="form-control">
+          <option value="0">Contract</option>
+          <option value="1">Freelance</option>
+          <option value="2">Full Time</option>
+          <option value="3">Part Time</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Описание</label>
+        <!--<input type="text" class="form-control" [(ngModel)]="vacancy.description" placeholder="" required [ngModelOptions]="{standalone: true}">-->
+        <angular-editor [(ngModel)]="vacancy.description" [ngModelOptions]="{standalone: true}"></angular-editor>
+      </div>
+      <div class="form-group">
+        <label>Город</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.city" placeholder="" required [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Удаленные условия</label>
+        <input type="checkbox" class="form-control" [(ngModel)]="vacancy.isRemoteWorking" placeholder="" required
+          [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Наименование организации</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.organizationName" placeholder="" required
+          [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Email для связи</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.email" placeholder="" required [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Сайт компании</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.companyURL" placeholder="" required [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Телефон для связи</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.phoneNumber" placeholder="" required [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Контактное лицо</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.contactPartner" placeholder="" required
+          [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Зарплата</label>
+        <input type="text" class="form-control" [(ngModel)]="vacancy.salary" placeholder="" required [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label>Валюта оплаты</label>
+        <select class="form-control" [(ngModel)]="vacancy.currencyType" [ngModelOptions]="{standalone: true}">
+          <option value="0">EUR</option>
+          <option value="1">RUB</option>
+          <option value="2">USD</option>
+        </select>
+      </div>
+
+      <div class="alert alert-success" role="alert">
+        Публикуя вакансию, вы автоматически соглашаетесь с <strong><a routerLink="/rules">условиями работы
+            сервиса</a></strong>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-xl" (click)="Create()" type="submit">Сохранить</button> </div>
+    </form>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script>var simplemde = new SimpleMDE();</script>
+  </div>
+</section>

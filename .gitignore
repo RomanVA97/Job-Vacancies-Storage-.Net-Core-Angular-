@@ -1,0 +1,44 @@
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2015 cache/options directory
+Backend/.vs/
+.idea
+# DNX
+project.lock.json
+artifacts/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+
+# NuGet Packages
+*.nupkg
+
+# NuGet v3's project.json files produces more ignoreable files
+*.nuget.props
+*.nuget.targets
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Webpack
+.awcache/
+dist/
+
+# Custom
+Logs/
+appsettings*.json
+Frontend/node_modules
+Backend/testTask/wwwroot/FileStorage

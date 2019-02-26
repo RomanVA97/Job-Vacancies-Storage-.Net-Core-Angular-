@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #f7f7f7 !important;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #222;
+}
+nav button {
+    background-color: #d41111 !important;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    color: #d41111 !important;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    color: #fff !important;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section a,
+footer a {
+    color: #d41111 !important;
+}
+
+section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-transform: none;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #eceeef;
+    border-radius: .3rem;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer div {
+  display: flex;
+  justify-content: center;
+}
+
+.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  color: #fff !important;
+  border-radius: 100%;
+  outline: 0;
+  background-color: #222;
+}
+
+.fa-twitter{
+  display: flex !important;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+}

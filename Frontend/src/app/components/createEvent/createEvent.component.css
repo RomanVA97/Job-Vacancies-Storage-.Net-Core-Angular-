@@ -1,0 +1,189 @@
+
+.max-width{
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #f7f7f7 !important;
+
+}
+nav{
+    background-color: #222;
+}
+nav button{
+    background-color: #d41111 !important;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    color: #d41111 !important;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    color: #fff !important;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+section{
+    padding: 50px 0;
+}
+h2{
+    text-transform: uppercase;
+}
+section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-transform: none;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.editor-toolbar {
+    position: relative;
+    opacity: .6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    padding: 0 10px;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.editor-toolbar a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none!important;
+    color: #2c3e50!important;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.editor-toolbar i.separator {
+    display: inline-block;
+    width: 0;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #fff;
+    color: transparent;
+    text-indent: -10px;
+    margin: 0 6px;
+}
+.editor-statusbar {
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #959694;
+    text-align: right;
+}
+.editor-statusbar span {
+    display: inline-block;
+    min-width: 4em;
+    margin-left: 1em;
+}
+.editor-statusbar .words:before {
+    content: 'words: ';
+}
+.editor-statusbar .lines:before {
+    content: 'lines: ';
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+.alert-success {
+    color: #d48a00 !important;
+    background-color: #f7d699 !important;
+    border-color: #f7d699 !important;
+}
+.btn-xl {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 3px;
+    color: #fff;
+    border-color: #d41111;
+    background-color: #d41111;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+section a,
+footer a {
+    color: #d41111 !important;
+}
+.footer {
+    display: flex;
+    align-items: baseline;
+  }
+  
+.footer div {
+    display: flex;
+    justify-content: center;
+}
+.row{
+    align-items: center;
+}
+.firm{
+    justify-content: center;
+    display: flex;
+}
+footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.fa-twitter{
+    display: flex !important;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #fff !important;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #222;
+}
